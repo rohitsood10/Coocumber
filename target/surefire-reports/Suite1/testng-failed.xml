@@ -16,7 +16,6 @@
       <class name="TestNG_Test.SanityTest">
         <methods>
           <include name="beforemethod"/>
-          <include name="Sanitytest1" invocation-numbers="0"/>
           <include name="teardownsuite"/>
           <include name="setupsuite"/>
           <include name="teardown"/>
@@ -27,6 +26,7 @@
           <include name="beforemethod"/>
           <include name="Smoketest2"/>
           <include name="teardown"/>
+          <include name="Smoketest3"/>
         </methods>
       </class>
     </classes>
