@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite1]">
+  <parameter name="product_id" value="7694250"/>
+  <listeners>
+    <listener class-name="listeners.Listener"/>
+  </listeners>
+  <test name="Regression2(failed)" preserve-order="true">
+    <parameter name="product_id" value="7694250"/>
+    <groups>
+      <run>
+        <include name="functest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestNG_Test.SanityTest">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="Sanitytest1" invocation-numbers="0"/>
+          <include name="teardownsuite"/>
+          <include name="setupsuite"/>
+          <include name="teardown"/>
+        </methods>
+      </class>
+      <class name="TestNG_Test.SmokeTest">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="Smoketest2"/>
+          <include name="teardown"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
