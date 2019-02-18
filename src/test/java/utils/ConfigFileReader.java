@@ -12,7 +12,8 @@ import enums.EnvironmentType;
 public class ConfigFileReader {
 	
 	private Properties properties;
-	private final String propertyFilePath= "C:\\Git\\Selenium\\Selenium\\Cucumber\\src\\test\\java\\configs\\configuration.properties";
+	//private final String propertyFilePath= "C:\\Git\\Coocumber\\src\\test\\java\\configs\\configuration.properties";
+	private final String propertyFilePath= System.getProperty("user.dir")+"\\src\\test\\java\\configs\\configuration.properties";
 
 	public ConfigFileReader() {
 		BufferedReader reader;
